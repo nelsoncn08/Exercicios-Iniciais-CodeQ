@@ -1,0 +1,14 @@
+T = int(input("Insira o tipo de chá (1<=T<=4): "))
+
+print("\nAbaixo, digite as respostas dadas pelos cinco participantes, colocando um espaço entre elas, como segue o exemplo - A B C D E: 1 2 3 2 1\n")
+P = [int(i) for i in input("A B C D E: ").split()]
+
+n = 0
+j = 0
+
+for i in P:
+  if T == P[j]:
+    n += 1
+  j += 1
+    
+print("\n{}".format(n))
