@@ -1,0 +1,10 @@
+lista_1 = ['CCNE','CT','CTISM','CCS','CT','CAU']
+lista_2 = ['CCSH','CAL','POLI','CCR','CEFD']
+
+lista = lista_1 + lista_2
+
+print(lista)
+
+alfabetica = sorted(lista)
+
+print("\n{}".format(alfabetica))
