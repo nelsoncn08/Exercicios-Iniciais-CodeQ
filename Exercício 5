@@ -1,0 +1,9 @@
+import math as m
+
+print("Abaixo, digite os pontos x e y, colocando um espaço entre eles, como segue o exemplo - x y: 1.2 3.4\n")
+x1 , y1 = [float(i) for i in input("x1 y1: ").split()]
+x2 , y2 = [float(i) for i in input("x2 y2: ").split()]
+
+d = m.sqrt((x2-x1)**2 + (y2-y1)**2)
+
+print("\nA distância entre os pontos vale: %.4f" %d)
