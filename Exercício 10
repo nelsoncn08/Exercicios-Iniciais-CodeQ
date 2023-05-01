@@ -1,0 +1,36 @@
+x = 1
+n = 0
+Vi = 0
+Vg = 0
+E = 0
+
+while x == 1:
+
+  Gi = int(input("Número de gols marcados pelo Inter no último GRENAL: "))
+  Gg = int(input("Número de gols marcados pelo Grêmio no último GRENAL: "))
+
+  if Gi > Gg:
+    Vi += 1
+  elif Gg > Gi:
+    Vg += 1
+  elif Gg == Gi:
+    E += 1
+
+  n += 1
+
+  x = int(input("Novo grenal (1-sim 2-nao)\n"))
+
+  if x != 1:
+
+    if Vi > Vg:
+      V = "O time que mais venceu GRENAIS foi o Inter"
+    elif Vg > Vi:
+      V = "O time que mais venceu GRENAIS foi o Grêmio"
+    elif Vg == Vi:
+      V = "Não houve vencedor"
+      
+    print("\nNúmero de GRENAIS computados: %i" %n,
+          "\nNúmero de vitórias do Inter: %i" %Vi,
+          "\nNúmero de vitórias do Grêmio: %i" %Vg,
+          "\nNúmero de empates: %i" %E,
+          "\n%s" %V)
