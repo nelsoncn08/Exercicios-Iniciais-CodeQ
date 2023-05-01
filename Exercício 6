@@ -1,0 +1,8 @@
+N = int(input("Insira o número do funcionário: "))
+H = int(input("Insira o número de horas trabalhadas: "))
+V = float(input("Insira o valor da hora trabalhada: "))
+
+S = H*V
+
+print("\nNUMBER =", N,
+      "\nSALARY = U$ %.2f" %S)
