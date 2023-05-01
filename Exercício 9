@@ -1,0 +1,14 @@
+x = int(input("Insira o DDD: "))
+
+n = 0
+
+DDD    = [        61,        71,         11,              21,            32,        19,       27,              31,           55]
+Estado = ["Brasília","Salvador","São Paulo","Rio de Janeiro","Juiz de Fora","Campinas","Vitória","Belo Horizonte","Santa Maria"]
+
+if x in DDD:
+  for i in DDD:
+    if x == DDD[n]:
+      print("\n%s" %Estado[n])
+    n += 1
+else:
+  print("\nDDD não cadastrado")
