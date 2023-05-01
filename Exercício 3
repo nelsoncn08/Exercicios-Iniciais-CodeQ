@@ -1,0 +1,7 @@
+A = float(input("Insira o valor de A: "))
+B = float(input("Insira o valor de B: "))
+C = float(input("Insira o valor de C: "))
+
+M = (A*2 + B*3 + C*5)/10
+
+print( "MEDIA = %0.1f" %M)
