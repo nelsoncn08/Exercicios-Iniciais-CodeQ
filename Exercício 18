@@ -1,0 +1,24 @@
+import math as m
+
+B = int(input("Insira a quantidade de bolinhas que Amélia já possui (B>1): "))
+
+Error = False
+
+if Error == False:
+
+  if B <= 0:
+    Error = True
+    print("\nValor inválido para B.")
+
+  G = float(input("\nInsira a quantidade de galhos de sua nova árvore de natal (100<G<1000): "))
+
+  if G <= 100 or G >= 1000:
+    Error = True
+    print("\nValor inválido para G.")
+
+  x = m.floor((G/2)-B)
+
+  if x > 0:
+    print("\nFaltam {} bolinha(s)" .format(x))
+  elif x <= 0:
+    print("\nAmelia tem todas bolinahs!")
