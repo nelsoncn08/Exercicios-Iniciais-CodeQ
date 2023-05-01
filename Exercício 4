@@ -1,0 +1,16 @@
+A = float(input("Insira o valor de A: "))
+B = float(input("Insira o valor de B: "))
+C = float(input("Insira o valor de C: "))
+
+pi = 3.14159
+Ti = A*C/2
+Ci  = pi*C**2
+Ta = (A + B)*C/2
+Q  = B**2
+R  = A*B
+
+print( "\nTRIANGULO = %0.3f" %Ti,
+       "\nCIRCULO = %.3f" %Ci,
+       "\nTRAPEZIO = %.3f" %Ta,
+       "\nQUADRADO = %.3f" %Q,
+       "\nRETANGULO = %.3f" %R)
