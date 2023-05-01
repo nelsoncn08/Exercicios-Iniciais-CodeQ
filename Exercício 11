@@ -1,0 +1,41 @@
+print("Abaixo, digite a altura do pulo do sapo (1<=P<=5) e o número de canos (2<=N<=100), respectivamente, colocando um espaço entre eles, como segue o exemplo - P N: 2 4\n")
+P , N = [int(i) for i in input("P N: ").split()]
+
+Error = False
+
+if P < 1 or P > 5:
+  Error = True
+  print("Altura do pulo do sapo inválida.")
+if N < 2 or N > 100:
+  Error = True
+  print("Número de canos inválido.")
+
+if Error == False:
+  print("\nAgora, digite os números (0<H<=10) que definirão a altura dos %i canos, colocando um espaço entre cada número, como segue o exemplo - H : 1 3 5 3\n")
+  H = [int(i) for i in input("H: ").split()]
+
+NH = int(len(H))
+
+for i in H:
+  if i <= 0 or i > 10:
+    Error = True
+    print("Altura do cano inválida.")
+if NH != N:
+  Error = True
+  print("Número de alturas para os canos, {}, em desacordo com o número de canos, {}.".format(NH, N))
+
+j = 0
+k = 1
+Lost = False
+
+if Error == False:
+  while k < len(H):
+    if abs(H[k]-H[j]) > P:
+      Lost = True
+    j += 1
+    k += 1
+
+  if Lost == False:
+    print("\nYOU WIN")
+  else:
+    print("\nGAME OVER")
