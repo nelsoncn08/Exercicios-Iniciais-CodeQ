@@ -1,0 +1,20 @@
+print("\nAbaixo, insira o número de competidores, a quantidade de folhas de papel especial compradas pela Diretora e a quantidade de folhas de papel especial que cada compedidor deve receber (1<=C,P,F<=1000), respectivamente, colocando um espaço entre eles, como segue o exemplo - C P F: 10 100 10")
+C , P , F = [int(i) for i in input("\nC P F: ").split()]
+
+Error = False
+
+if C < 1 or C > 1000:
+  Error = True
+  print("\nValor inválido para C.")
+elif P < 1 or P > 1000:
+  Error = True
+  print("\nValor inválido para P.")
+elif F < 1 or F > 1000:
+  Error = True
+  print("\nValor inválido para F.")
+
+if Error == False:
+  if P >= C*F:
+    print("\nS")
+  else:
+    print("\nN")
