@@ -1,0 +1,27 @@
+SoaD = ["PROXYCITY","P.Y.N.G","DNSUEY!","SERVERS","HOST!","CRIPTONIZE","OFFLINE DAY","SALT","ANSWER!","RAR?","WIFI ANTENNAS"]
+
+C = int(input("Insira o número de casos de teste: "))
+
+Error = False
+
+if C < 1:
+  Error = True
+  print("\nNúmero de casos de teste inválido.")
+
+if Error == False:
+  print("\nAbaixo, digite os valores para dois números inteiros (0<=X,Y<=5), colocando um espaço entre eles, como segue o exemplo - X Y: 1 2")
+
+  for i in range(C):
+    X , Y = [int(i) for i in input("\nX Y: ").split()]
+
+    if X < 0 or X > 5:
+      Error = True
+      print("Valor inválido para X.")
+    elif Y < 0 or Y > 5:
+      Error = True
+      print("Valor inválido para Y.")
+
+    if Error == False:
+      print(SoaD[X+Y])
+    else:
+      Error = False
