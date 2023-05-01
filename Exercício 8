@@ -1,0 +1,24 @@
+import math as m
+
+a = float(input("Insira o valor de a: "))
+b = float(input("Insira o valor de b: "))
+c = float(input("Insira o valor de c: "))
+
+n = b**2 - 4*a*c
+
+if a == 0:
+  print("\nImpossível calcular")
+
+else:
+  if n < 0:
+    print("\nEssa equação não possui raízes reais.")
+
+  elif n == 0:
+    x = -b/(2*a)
+    print("\nAs raízes são iguais e seu valor é: %.5f" %x)
+
+  elif n > 0:
+    x1 = (-b + m.sqrt(n))/(2*a)
+    x2 = (-b - m.sqrt(n))/(2*a)
+    print("\nR1 = %.5f" %x1,
+          "\nR2 = %.5f" %x2)
