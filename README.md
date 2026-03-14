@@ -1,3 +1,3 @@
-Exercícios realizados como tarefa durante o processo trainee 2023.1 da CodeQ - equipe de ensino de programação da Universidade Federal de Santa Maria.
+Exercises completed as assignments during the selection process of CodeQ – the programming education team of the Federal University of Santa Maria (2023.1).
 
 https://linktr.ee/codequfsm
